@@ -16,6 +16,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'vimspell'
 Plugin 'fugitive.vim'
 Plugin 'VimClojure'
+Plugin 'rust-lang/rust.vim'
 call vundle#end()
 filetype plugin indent on
 
@@ -65,3 +66,6 @@ let vimclojure#DynamicHighlighting=1
 "
 " " Color parens so they're easier to match visually
 let vimclojure#ParenRainbow=1
+
+"rust autoformatting
+let g:rustfmt_autosave = 1
