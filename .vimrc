@@ -17,7 +17,7 @@ Plugin 'vimspell'
 Plugin 'fugitive.vim'
 Plugin 'VimClojure'
 Plugin 'rust-lang/rust.vim'
-Plugin `rhysd/vim-clang-format'
+Plugin 'rhysd/vim-clang-format'
 call vundle#end()
 filetype plugin indent on
 
