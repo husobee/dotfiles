@@ -17,6 +17,7 @@ Plugin 'vimspell'
 Plugin 'fugitive.vim'
 Plugin 'VimClojure'
 Plugin 'rust-lang/rust.vim'
+Plugin `rhysd/vim-clang-format'
 call vundle#end()
 filetype plugin indent on
 
@@ -69,3 +70,14 @@ let vimclojure#ParenRainbow=1
 
 "rust autoformatting
 let g:rustfmt_autosave = 1
+
+"clang autoformatting
+let g:clang_format#style_options = {
+    \ "BasedOnStyle": "LLVM",
+    \ "IndentWidth": "8",
+    \ "UseTab": "Always",
+    \ "BreakBeforeBraces": "Linux",
+    \ "AllowShortIfStatementsOnASingleLine": "false",
+    \ "IndentCaseLabels": "false"}
+
+autocmd FileType c ClangFormatAutoEnable
